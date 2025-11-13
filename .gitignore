@@ -1,0 +1,15 @@
+/.vscode
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+Thumbs.db
+npm-debug.log
+yarn-error.log
+yarn-debug.log
