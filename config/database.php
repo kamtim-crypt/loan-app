@@ -1,3 +1,14 @@
+Of course. Here is the edited version of your config/database.php file.
+
+The only change is on line 96, inside the pgsql connection settings, where 'url' => env('DB_URL') has been changed to 'url' => env('DATABASE_URL').
+
+Copy this entire block of code and use it to completely replace the content of your config/database.php file.
+
+code
+PHP
+download
+content_copy
+expand_less
 <?php
 
 use Illuminate\Support\Str;
@@ -85,7 +96,7 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DB_URL'),
+            'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'laravel'),
